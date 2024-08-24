@@ -8,6 +8,32 @@
     <link rel="stylesheet" href="https://prod.rexxit.net/css/driverWebBeta.css">
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <link rel="shortcut icon" type="image/x-icon" href="favicon.ico">
+    <!--NAVIGATION-->
+    <nav>
+      <div class="hamburger" onclick="toggleMenu()">
+          <div></div>
+          <div></div>
+          <div></div>
+      </div>
+      <ul>
+          <li><a href="/">Home</a></li>
+          <li><a href="/display">Video Drivers</a></li>
+          <li><a href="/chipset">Chipset Drivers</a></li>
+          <li><a href="#">Network Drivers (Coming Soon)</a></li>
+          <li><a href="#">Audio Drivers (Re-working)</a></li>
+          <li><a href="/contact">Contact</a></li>
+          <li><a href="https://docs.rexxit.net/drivers-website/releasenotes" target="_blank">Website Info</a></li>
+      </ul>
+  </nav>
+
+  <script>
+    function toggleMenu() {
+        const menu = document.querySelector('nav ul');
+        menu.classList.toggle('active');
+    }
+    </script>
+
+  <!--NAVIGATION-->
 </head>
 <body>
     <div class="banner">
